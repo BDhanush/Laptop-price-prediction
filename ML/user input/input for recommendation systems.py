@@ -1,0 +1,46 @@
+from numpy import Inf
+
+while(1):
+    print("\nNote: Type of laptop --> it's corresponding input\n")
+    print('gaming laptop --> 1')
+    print('thin and light laptop --> 2')
+    print('2 in 1 laptop --> 3')
+    print('notebook --> 4')
+    print('laptop --> 5')
+    print('2 in 1 gaming laptop --> 6')
+    print('business laptop --> 7')
+    print('chromebook --> 8')
+    print('creator laptop --> 9\n')
+    print("Enter type of laptop: ",end='')
+    type=int(input())
+
+    maxi=float(-Inf)
+    mini=float(Inf)
+    print("\nOn a scale of 1-5 (higher the better): ")
+    print("\tImportance of CPU speed: ",end="")
+    cpu_speed=int(input())
+    maxi=max(maxi,cpu_speed)
+    mini=min(mini,cpu_speed)
+    print("\tImportance of GPU speed: ",end="")
+    gpu_speed=int(input())
+    maxi=max(maxi,gpu_speed)
+    mini=min(mini,gpu_speed)
+    print("\tImportance of battery life: ",end="")
+    battery_life=int(input())
+    maxi=max(maxi,battery_life)
+    mini=min(mini,battery_life)
+    print("\tImportance of screen resolution: ",end="")
+    res=int(input())
+    maxi=max(maxi,res)
+    mini=min(mini,res)
+    print("\tImportance of weight: ",end="")
+    weight=int(input())
+    maxi=max(maxi,weight)
+    mini=min(mini,weight)
+
+    if(maxi>5 or mini<0):
+        print("\n1 or more of the inputs was/were out of bounds. Please try again.")
+    else:
+        break
+print("\nEnter your budget: ",end="")
+budget=int(input())
