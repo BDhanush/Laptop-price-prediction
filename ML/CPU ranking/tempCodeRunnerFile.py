@@ -1,6 +1,0 @@
-['intel core i9 12th gen',
- 'amd ryzen 7 octa core',
- 'amd ryzen 7 octa core 5th gen',
- 'intel core i5 11th gen',
- 'intel core i7 11th gen',
- 'intel celeron dual core',
